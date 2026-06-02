@@ -4,8 +4,7 @@ function showCourses() {
         .then(response => response.json())
         .then(data => {
 
-            const dataValue =
-                document.getElementById("courseTable");
+            const dataValue = document.getElementById("courseTable");
 
             data.forEach(course => {
 
