@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    text-align: center;
+    margin-top: 100px;
+    color: bisque;
+    font-size: 40px;
+}
+
+button{
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-top: 70px;
+    border-radius: 10px;
+    border:2px;
+    border-style: solid;
+    background-color: rgb(24, 176, 223);
+    border-color: rgb(118, 67, 175)
+}
+
+button:hover{
+    background-color: rgb(29, 29, 173);
+    color: white;
+    border-color: rgb(190, 127, 248);
+}
+
+/* Register Css */
