@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Available COurses</title>
+
+    <style>
+        td{
+            background-color: aliceblue;
+        }
+    </style>
 </head>
 <body>
     
-<h1>Available Courses</h1>
+<h1 style="text-align: center;">Available Courses</h1>
+
+<table border="2" align="center" style="background-color: black;">
+
+    <tr align="center">
+        <th width="150" style="background-color: blueviolet; color: white; padding: 10px; font-size: 20px;">Course Id</th>
+        <th width="150" style="background-color: blueviolet; color: white; padding: 10px; font-size: 20px;">Course Name</th>
+        <th width="150" style="background-color: blueviolet; color: white; padding: 10px; font-size: 20px;">Trainer</th>
+        <th width="150" style="background-color: blueviolet; color: white; padding: 10px; font-size: 20px;">Duration in Weeks</th>
+    </tr>
+
+
+    <!-- Table body where rows will be inserted -->
+    <tbody align="center" id="courseTable">
+
+
+    </tbody> 
+
+</table>
+
+<script src="Course.js"></script>
 
 </body>
 </html>
