@@ -26,5 +26,3 @@ function showCourses() {
 window.onload = function() {
     showCourses();
 };
-
-
