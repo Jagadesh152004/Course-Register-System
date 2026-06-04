@@ -17,7 +17,7 @@ function showCourses() {
                 </tr>
                 `;
 
-                dataValue.innerHTML += row;
+                 dataValue.innerHTML += row;
             });
         });
 }
@@ -25,3 +25,33 @@ function showCourses() {
 window.onload = function() {
     showCourses();
 };
+
+
+function showEnrolled(){
+
+    fetch("http://localhost:8080/courses/enrolled")
+    .then((response) => response.json())
+    .then( data => {
+        const enrollData = document.getElementById("enrolledTable")
+
+                data.forEach(enrolled => {
+
+              let row = `
+                <tr>
+                    <td>${enrolled.name}</td>
+                    <td>${enrolled.emailID}</td>
+                    <td>${enrolled.courseName}</td>
+                </tr>
+                `;
+
+                enrollData.innerHTML += row;
+
+        })
+
+    })
+}
+
+window.onload = function(){
+    showEnrolled();
+};
+
