@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enrolled Course</title>
+    <title>Enrolled Students - CourseHub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="text-align: center;">Enrolled Courses</h1>
+    <nav class="navbar">
+        <div class="brand">🎓 CourseHub</div>
+        <div class="nav-links">
+            <a href="available.html" class="nav-link">Courses</a>
+            <a href="enrolled.html" class="nav-link active">Enrolled</a>
+            <a href="register.html" class="nav-link">Register</a>
+        </div>
+    </nav>
 
-<table border="2" align="center" style="background-color: black;">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">Enrolled Students</h1>
+            <p class="page-subtitle">View all students currently registered for courses.</p>
+        </div>
 
-    <tr align="center">
-        <th width="150" style="background-color: blueviolet; color: white; padding: 10px; font-size: 20px;">Name</th>
-        <th width="200" style="background-color: blueviolet; color: white; padding: 10px; font-size: 20px;">Email ID</th>
-        <th width="150" style="background-color: blueviolet; color: white; padding: 10px; font-size: 20px;">Course Name</th>
-    </tr>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Email ID</th>
+                        <th>Enrolled Course</th>
+                    </tr>
+                </thead>
+                <tbody id="enrolledTable">
+                </tbody> 
+            </table>
+        </div>
+    </div>
 
-    <!-- Table body where rows will be inserted -->
-    <tbody align="center" id="enrolledTable" style="color: aliceblue; background-color: blue;">
-
-    </tbody> 
-
-</table>
-
-<script src="Course.js"></script>
+    <script src="Course.js"></script>
 </body>
 </html>

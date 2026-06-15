@@ -3,42 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Course</title>
-    <link rel="stylesheet" href="register.css">
+    <title>Register Course - CourseHub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="registerBody">
-    <h1 style="color: rgb(240, 198, 12);"> 
-        Register Course
-    </h1>
-
-
-    <div class="formDiv">
-
-
-
-    <form action="http://localhost:8080/courses/register" method="post" class="form">
-
-        <label for="name"  class="label" >Enter Your Name</label>
-        <input type="text" class="inputBox"  name="name">
-
-        <label for="name"  class="label">Enter Your email</label>
-        <input type="email"class="inputBox"   name="emailID">
-        
-        <label for="name"  class="label">Enter Your Course</label>
-        
-        <select name="courseName" id="">
-
-            <option value="JAVA Core">JAVA Core</option>
-            <option value="Spring Boot">Spring Boot</option>
-            <option value="Python for AI">Python</option>
-        </select><br>
-
-        <div class="buttonBox">
-        <button type="submit" style="color: white;">submit</button>
+<body>
+    <nav class="navbar">
+        <div class="brand">🎓 CourseHub</div>
+        <div class="nav-links">
+            <a href="available.html" class="nav-link">Courses</a>
+            <a href="enrolled.html" class="nav-link">Enrolled</a>
+            <a href="register.html" class="nav-link active">Register</a>
         </div>
+    </nav>
 
-    </form>
+    <div class="container" style="display: flex; justify-content: center; margin-top: 40px;">
+        
+        <div style="width: 100%; max-width: 500px;">
+            
+            <div class="register-header">
+                <h1 class="page-title">Register for a Course</h1>
+                <p class="page-subtitle">Fill out your details to secure your spot.</p>
+            </div>
 
+            <div class="form-container" style="max-width: 100%;">
+                <form action="http://localhost:8080/courses/register" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailID">Email Address</label>
+                        <input type="email" id="emailID" name="emailID" placeholder="john@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="courseName">Select Course</label>
+                        <select name="courseName" id="courseName" required>
+                            <option value="JAVA Core">JAVA Core</option>
+                            <option value="Spring Boot">Spring Boot</option>
+                            <option value="Python for AI">Python for AI</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Submit Registration</button>
+                </form>
+            </div>
+            
+        </div>
     </div>
 </body>
 </html>
