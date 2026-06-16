@@ -8,7 +8,7 @@ import java.util.List;
 
 
 //@RequiredArgsConstructor
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "https://course-register-system.vercel.app/")
 @RestController
 public class CourseController {
     private final CourseService service ;
