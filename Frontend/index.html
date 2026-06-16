@@ -3,59 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Course - CourseHub</title>
+    <title>Welcome to CourseHub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="brand">🎓 CourseHub</div>
         <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
             <a href="available.html" class="nav-link">Courses</a>
             <a href="enrolled.html" class="nav-link">Enrolled</a>
-            <a href="register.html" class="nav-link active">Register</a>
+            <a href="register.html" class="nav-link">Register</a>
         </div>
     </nav>
 
-    <div class="container" style="display: flex; justify-content: center; margin-top: 40px;">
+    <div class="container hero-section" style="text-align: center; margin-top: 60px; max-width: 1000px;">
         
-        <div style="width: 100%; max-width: 500px;">
+        <h1 style="font-size: 56px; margin-bottom: 20px; color: var(--text-primary); letter-spacing: -1px;">
+            Welcome to <span style="color: var(--accent-color);">CourseHub</span>
+        </h1>
+        
+        <p style="font-size: 18px; color: var(--text-secondary); max-width: 650px; margin: 0 auto 40px auto; line-height: 1.6;">
+            A professional, full-stack learning management system. Discover new skills, browse expert-led courses, and seamlessly manage student enrollments through our secure platform.
+        </p>
+
+        <div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 80px;">
+            <a href="available.html" class="btn-primary" style="text-decoration: none; width: auto; padding: 14px 32px; font-size: 16px;">Explore Courses</a>
+            <a href="register.html" class="btn-action" style="text-decoration: none; padding: 14px 32px; font-size: 16px; font-weight: 500; display: flex; align-items: center;">Register Now</a>
+        </div>
+
+        <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; text-align: left;">
             
-            <div class="register-header">
-                <h1 class="page-title">Register for a Course</h1>
-                <p class="page-subtitle">Fill out your details to secure your spot.</p>
+            <div class="feature-card" style="background-color: var(--bg-surface); padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); transition: transform 0.2s;">
+                <div style="font-size: 36px; margin-bottom: 20px;">📚</div>
+                <h3 style="margin-top: 0; margin-bottom: 10px; color: var(--text-primary); font-size: 20px;">Rich Course Catalog</h3>
+                <p style="color: var(--text-secondary); font-size: 15px; line-height: 1.6; margin-bottom: 0;">
+                    Browse our extensive database of professional courses, seamlessly fetched from our powerful Spring Boot backend.
+                </p>
             </div>
 
-            <div class="form-container" style="max-width: 100%;">
-                <form action="http://localhost:8080/courses/register" method="post">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="emailID">Email Address</label>
-                        <input type="email" id="emailID" name="emailID" placeholder="john@example.com" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="courseName">Select Course</label>
-                        <select name="courseName" id="courseName" required>
-                            <option value="JAVA Core">JAVA Core</option>
-                            <option value="Spring Boot">Spring Boot</option>
-                            <option value="Java Script">Java Script</option>
-                            <option value="React.js Masterclass">React.js Masterclass</option>
-                            <option value="Cloud - AWS">Cloud Computing (AWS)</option>
-                            <option value="DSA">Data Structures & Algorithms</option>
-                            <option value="Full Stack Web Dev">Full Stack Web Dev</option>
-                            <option value="Cybersecurity Basics">Cybersecurity</option>
-                            <option value="UI/UX Design Principles">UI/UX Design Principles</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="btn-primary">Submit Registration</button>
-                </form>
+            <div class="feature-card" style="background-color: var(--bg-surface); padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); transition: transform 0.2s;">
+                <div style="font-size: 36px; margin-bottom: 20px;">⚡</div>
+                <h3 style="margin-top: 0; margin-bottom: 10px; color: var(--text-primary); font-size: 20px;">Seamless Registration</h3>
+                <p style="color: var(--text-secondary); font-size: 15px; line-height: 1.6; margin-bottom: 0;">
+                    Enroll in seconds with our streamlined UI. All data is securely processed and safely stored in our MySQL database.
+                </p>
             </div>
-            
+
+            <div class="feature-card" style="background-color: var(--bg-surface); padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); transition: transform 0.2s;">
+                <div style="font-size: 36px; margin-bottom: 20px;">👥</div>
+                <h3 style="margin-top: 0; margin-bottom: 10px; color: var(--text-primary); font-size: 20px;">Student Tracking</h3>
+                <p style="color: var(--text-secondary); font-size: 15px; line-height: 1.6; margin-bottom: 0;">
+                    Access the dedicated administrative view to monitor real-time updates on active students and their assigned programs.
+                </p>
+            </div>
+
         </div>
     </div>
 </body>
