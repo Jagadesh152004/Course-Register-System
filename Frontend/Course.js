@@ -2,7 +2,7 @@ function showCourses() {
     const dataValue = document.getElementById("courseTable");
     if (!dataValue) return;
 
-    fetch("http://localhost:8080/courses")
+    fetch("https://course-register-system.onrender.com/courses")
         .then(response => response.json())
         .then(data => {
             dataValue.innerHTML = ""; // Clear existing data
@@ -28,7 +28,7 @@ function showEnrolled() {
     const enrollData = document.getElementById("enrolledTable");
     if (!enrollData) return;
 
-    fetch("http://localhost:8080/courses/enrolled")
+    fetch("https://course-register-system.onrender.com/courses/enrolled")
         .then((response) => response.json())
         .then(data => {
             enrollData.innerHTML = ""; // Clear existing data
