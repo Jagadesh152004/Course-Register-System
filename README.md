@@ -201,13 +201,16 @@ spring.datasource.password=${DB_PASSWORD}
 ## 📸 Screenshots
 
 ### Home Page
-_Add project screenshots here_
+![Home Page](<img width="1920" height="1000" alt="Screenshot 2026-06-16 101258" src="https://github.com/user-attachments/assets/f54e7709-46bf-47cb-a7e7-8e828c93b0ed" />)
 
 ### Course Registration
-_Add project screenshots here_
+![Course](<img width="1920" height="997" alt="Screenshot 2026-06-16 161657" src="https://github.com/user-attachments/assets/850bf949-5783-47e4-a653-7bba225631c0" />)
 
 ### Enrolled Courses
-_Add project screenshots here_
+![Endrolled Page](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/daaea693-0686-4645-b83f-2fc57ff6ee41" />)
+
+### Register Page
+![Register Page](<img width="1920" height="986" alt="Screenshot 2026-06-16 162457" src="https://github.com/user-attachments/assets/0e7c540f-92d4-4434-9e08-7ed59bd4cc37" />)
 
 ---
 
